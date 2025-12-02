@@ -1,23 +1,28 @@
 body {
-  background-image: url('Contenido/fondo2.jpg');
+  background-image: url('../contenido/fondo2.jpg');
   background-size: cover;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   color: white;
   padding: 40px;
 }
 
-
-/* Contenedor para que el contenido se vea claro */
+/* Contenedor */
 div, section {
-  background-color: rgba(0, 0, 0, 0.6); /* fondo semitransparente */
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
 }
+
 /* Títulos */
 h1, h2 {
   color: #0d83b9;
   margin-bottom: 10px;
+  transition: transform 0.3s ease; /* animación */
+}
+
+h1:hover, h2:hover {
+  transform: scale(1.05);
 }
 
 /* Párrafos */
@@ -37,6 +42,11 @@ ul, ol {
 a {
   color: #0004ff;
   text-decoration: underline;
+  transition: color 0.3s ease; /* animación */
+}
+
+a:hover {
+  color: #ff6600;
 }
 
 /* Imágenes */
@@ -75,3 +85,42 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #0099cc;
 }
+
+/* Responsive design */
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  div, section {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p, ul, ol {
+    font-size: 14px;
+  }
+
+  input, textarea {
+    font-size: 14px;
+  }
+
+  input[type="submit"] {
+    padding: 8px 16px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
