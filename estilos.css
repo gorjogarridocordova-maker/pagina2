@@ -6,12 +6,15 @@ body {
   padding: 40px;
 }
 
-/* Contenedor oscuro */
+/* Fuerza el fondo negro semitransparente en los bloques */
 div, section {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  padding: 20px !important;
+  border-radius: 10px !important;
+  margin-bottom: 20px !important;
+  color: white !important;
+}
+
 }
 
 /* Títulos */
@@ -86,6 +89,7 @@ img {
     height: auto;
   }
 }
+
 
 
 
